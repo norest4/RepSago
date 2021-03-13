@@ -1,1 +1,2 @@
-print('Selam')
+print('Selam aq')
+print('amk seninf')
