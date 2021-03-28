@@ -18,16 +18,42 @@ div {
 header {
     display: flex;
     width: 90%;
+    height: 10vh;
     margin: auto;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    justify-content: flex-start;
+    padding-left: 20px;
+    margin-top: 3vh;
+}
+
+.nav-link {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    text-decoration: none;
+    padding-right: 100px;
+    
 }
 
 .logo-container {
     background: rgb(255, 255, 255);
     flex: 1;
+}
 
+.logo {
+    font-weight: 400;
+    margin-left: 1.8%;
+    margin-top: -1%;
 }
 
 nav {
     background: rgb(29, 51, 51);
     flex: 1;
+}
+
+img {
+    margin: 1%;
 }
