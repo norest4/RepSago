@@ -1,59 +1,88 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    background:  #e9e9e9;
-}
-div {
-    width: 90%;
-    margin: auto;
-    height: 20vh;
-    
+  font-family: "Montserrat", sans-serif;
+  background: #e9e9e9;
+  /* adding padding or margin to the page will make it unresponsive for the 
+  other screen sizes, instead use margin */
+  margin: 0 5%;
 }
 
 header {
-    display: flex;
-    width: 90%;
-    height: 10vh;
-    margin: auto;
+  display: flex;
 }
 
 .nav-links {
-    display: flex;
-    list-style: none;
-    justify-content: flex-start;
-    padding-left: 20px;
-    margin-top: 3vh;
+  display: flex;
+  /* list-style: none; */
+  /* justify-content: flex-start; */
+  /* padding-left: 20px; */
+  /* margin-top: 3vh; */
+
+  /* Naims Edit */
+  /* uses as much as space as possible for the menu items, if you add more menu items 
+  it will automatially adjust the sizing and paddings */
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
 }
 
 .nav-link {
-    color: rgb(255, 255, 255);
-    font-size: 18px;
-    text-decoration: none;
-    padding-right: 100px;
-    
+  /* Naims edit */
+  /* make it use the all allocated space */
+  /* also use this classname on parent divs instead of children */
+  width: 100%;
+  border: 1px solid salmon;
+}
+
+/* now you can access to the children by specifying a tag */
+.nav-link a {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  text-decoration: none;
+  /* padding-right: 100px; */
+  /* put the list item in the middle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* added padding to top and bottom to make it wider instead of adding height
+  to the whole header bar. menu items will determine the height automatically 
+  and the items always will be in the middle */
+  padding: 1em 0;
 }
 
 .logo-container {
-    background: rgb(255, 255, 255);
-    flex: 1;
+  background: rgb(255, 255, 255);
 }
 
 .logo {
-    font-weight: 400;
-    margin-left: 1.8%;
-    margin-top: -1%;
+  /* never use percentage for the margin of child items, only time you might use it as
+  we did in the body, but its still not recomended */
+  /* margin-left: 1.8%;
+  margin-top: -1%; */
+}
+
+.intro-text {
+  background: aquamarine;
+  flex: 1;
+  width: 90%;
+  height: 60vh;
+  margin: auto;
+  margin-top: 2%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 nav {
-    background: rgb(29, 51, 51);
-    flex: 1;
+  background: rgb(29, 51, 51);
+  flex: 1;
 }
 
 img {
-    margin: 1%;
+  margin: 1%;
 }
