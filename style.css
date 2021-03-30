@@ -8,12 +8,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     background:  #e9e9e9;
 }
-div {
-    width: 90%;
-    margin: auto;
-    height: 20vh;
-    
-}
+
 
 header {
     display: flex;
@@ -41,6 +36,9 @@ header {
 .logo-container {
     background: rgb(255, 255, 255);
     flex: 1;
+    width: 90%;
+    margin: auto;
+    height: 20vh;
 }
 
 .logo {
@@ -48,6 +46,19 @@ header {
     margin-left: 1.8%;
     margin-top: -1%;
 }
+
+.intro-text {
+    background: aquamarine;
+    flex: 1;
+    width: 90%;
+    height: 60vh;
+    margin: auto;
+    margin-top: 2%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
 
 nav {
     background: rgb(29, 51, 51);
