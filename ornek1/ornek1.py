@@ -1,4 +1,4 @@
-def countMatches(self, items, ruleKey, ruleValue):
+def countMatches(items, ruleKey, ruleValue):
     """
     :type items: List[List[str]]
     :type ruleKey: str

@@ -1,5 +1,5 @@
 
-def sumOddLengthSubarrays(self, arr):
+def sumOddLengthSubarrays(arr):
     """
     :type arr: List[int]
     :rtype: int
